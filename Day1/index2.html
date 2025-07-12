@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input text="text" id="text box" placeholder="enter the name">
+    <button onclick="savename()">save</button>
+    <h4 id="place"></h4>
+        <script>
+            const name=document.getElementById("text box");
+            const show=document.getElementById("place");
+            function savename() {
+               show.textContent= name.value;
+            }
+        </script>
+</body>
+</html>
